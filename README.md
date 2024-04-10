@@ -16,14 +16,14 @@ Author: He Shen (1297447)
 
 ## Sample usage
 
-In Jupyter Notebook, create a new code block at the bottom of **1. K-NN classifier**:
+If you want to use 1-KNN and train dataset to predict test dataset:
 
 ```
 prediction = predict(test_features, train_features, train_labels, k = 1)
 prediction
 ```
 
-Run the block, it would output something like this:
+Run the code block, it would output something like this:
 ```
 0       0
 1       0
@@ -39,7 +39,7 @@ Run the block, it would output something like this:
 Length: 1350, dtype: int64
 ```
 
-If you want to compare with the actual labels:
+If you want to compare the prediction with the actual labels:
 ```
 (prediction == test_labels).mean()
 ```
